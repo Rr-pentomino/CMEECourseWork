@@ -1,0 +1,3 @@
+[submodule "vendor/mulquabio"]
+	path = vendor/mulquabio
+	url = https://github.com/mhasoba/TheMulQuaBio.git
