@@ -5,7 +5,7 @@
 # Arguments: none
 #Date: Oct 2025
 
-echo -e "\nThis is a shell script! \n"
+echo -e "\nThis is a shell script! \n" 
 
 #exit
 

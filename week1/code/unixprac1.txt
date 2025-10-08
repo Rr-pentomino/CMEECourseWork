@@ -1,7 +1,14 @@
-wc -l "/Users/ahmetselimesmer/TheMulQuaBio/content/data/fasta"/*  
-tail -n +2 "/Users/ahmetselimesmer/TheMulQuaBio/content/data/fasta/E.coli.fasta"
+# Counting lines for every file in the folder using relative path
+wc -l  ../data/fasta/*
 
-tail -n +2 "/Users/ahmetselimesmer/TheMulQuaBio/content/data/fasta/E.coli.fasta" | wc -c
+# Print everything starting from the second line
+tail -n +2 ../data/fasta/E.coli.fasta
 
-tail -n +2 "/Users/ahmetselimesmer/TheMulQuaBio/content/data/fasta/E.coli.fasta" |  tr -d '\r\n' | grep -o 'ATGC' | wc -l
-AT=$(tail -n +2 "/Users/ahmetselimesmer/TheMulQuaBio/content/data/fasta/E.coli.fasta" | tr -d '\r\n' | tr -cd 'AT' | wc -c); GC=$(tail -n +2 "/Users/ahmetselimesmer/TheMulQuaBio/content/data/fasta/E.coli.fasta" | tr -d '\r\n' |tr -cd 'GC' | wc -c);  echo "scale=4; $AT/$GC" | bc -l
+# Count the sequence length of this genome (removing the headline and newlines)
+tail -n +2 ../data/fasta/E.coli.fasta | tr -d '\n' | wc -c
+
+# Count the matches of a particular sequence, “ATGC” 
+tail -n +2 ../data/fasta/E.coli.fasta |  tr -d '\r\n' | grep -o 'ATGC' | wc -l
+
+# Compute the AT/GC ratio (without removing uncertain bases)
+AT=$(tail -n +2 ../data/fasta/E.coli.fasta | tr -d '\r\n' | tr -cd 'AT' | wc -c); GC=$(tail -n +2 ../data/fasta/E.coli.fasta | tr -d '\r\n' |tr -cd 'GC' | wc -c);  echo "scale=4; $AT/$GC" | bc -l
