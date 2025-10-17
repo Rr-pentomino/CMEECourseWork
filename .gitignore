@@ -1,2 +1,6 @@
 *~ 
 *.tmp
+
+git add -f temporary.tmp
+
+
