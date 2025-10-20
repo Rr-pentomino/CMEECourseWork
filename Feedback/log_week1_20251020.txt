@@ -325,8 +325,8 @@ expr: syntax error: missing argument after ‘+’
 FEEDBACK SUMMARY
 ======================================================================
 
-Scripts tested: 11
-Scripts successful: 9
+Scripts tested: 8
+Scripts successful: 6
 Scripts with errors: 2
 Warnings/Notes: 1
 
