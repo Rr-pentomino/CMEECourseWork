@@ -2,6 +2,7 @@ rm(list = ls())
 require(ggplot2)
 require(dplyr)
 
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 MyDF<- read.csv("../data/EcolArchives-E089-51-D1.csv")
 
 #covert mg to g
@@ -67,6 +68,6 @@ results <- MyDF %>%
 # Save results as CSV 
 write.csv(results, "../Results/PP_Results.csv", row.names = FALSE)
 
-cat("✅ PP_Dists.R complete! 3 PDFs and 1 CSV saved in ../Results/\n")
+cat(" PP_Dists.R complete! 3 PDFs and 1 CSV saved in ../Results/\n")
 
 

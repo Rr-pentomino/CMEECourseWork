@@ -1,3 +1,7 @@
+# --- Load ggplot2 library ---
+library(ggplot2)
+# --- Set working directory ---
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 # --- Import data ---
 a <- read.table("../data/Results.txt", header = TRUE)
 

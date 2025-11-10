@@ -20,6 +20,6 @@ system.time({
   E <- matrix(rnorm(100*1000, 0, 0.2), 100, 1000)
   Output <- stochrickvect(P0, E=E)})
 
-View(Output)
+print(head(Output))
 
 

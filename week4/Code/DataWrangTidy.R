@@ -2,6 +2,9 @@
 ################## Wrangling the Pound Hill Dataset ############
 ################################################################
 
+# Set working directory to the location of this script
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
 ############# Load the dataset ###############
 # header = false because the raw data don't have real headers
 MyData <- as.matrix(read.csv("../data/PoundHillData.csv", header = FALSE))

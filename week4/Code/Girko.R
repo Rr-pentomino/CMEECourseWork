@@ -1,3 +1,5 @@
+require(ggplot2)
+
 build_ellipse <- function(hradius, vradius){ # function that returns an ellipse
   npoints = 250
   a <- seq(0, 2 * pi, length = npoints + 1)
@@ -26,11 +28,11 @@ p <- p +
   geom_point(shape = I(3)) +
   theme(legend.position = "none")
 
-# now add the vertical and horizontal line
+# add the vertical and horizontal line
 p <- p + geom_hline(aes(yintercept = 0))
 p <- p + geom_vline(aes(xintercept = 0))
 
-# finally, add the ellipse
+# add the ellipse
 p <- p + geom_polygon(data = ellDF, aes(x = Real, y = Imaginary, alpha = 1/20, fill = "red"))
 p
 

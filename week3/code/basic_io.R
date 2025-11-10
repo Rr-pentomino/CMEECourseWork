@@ -1,4 +1,6 @@
 #simple script R input/output
+# set working directory
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 MyData <- read.csv("../data/trees.csv", header = TRUE)
 

@@ -1,5 +1,7 @@
 rm(list=ls())
 
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
 load("../data/KeyWestAnnualMeanTemperature.RData")
 
 ls()

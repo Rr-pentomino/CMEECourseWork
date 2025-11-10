@@ -1,4 +1,5 @@
-MyData<-read.csv("/Users/ahmetselimesmer/Documents/MQB-main/content/data/trees.csv")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+MyData<-read.csv("../data/trees.csv")
 MyData
 head(MyData)
 str(MyData)
@@ -15,4 +16,4 @@ TreeHeights
 NewData <- cbind(MyData, TreeHeights)
 NewData
 
-write.csv(NewData, "week3/results/TreeHts.csv" )
+write.csv(NewData, "../results/TreeHts.csv" )

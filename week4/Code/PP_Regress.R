@@ -2,6 +2,7 @@ rm(list = ls())
 require(ggplot2)
 require(dplyr)
 
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) 
 MyDF<- read.csv("../data/EcolArchives-E089-51-D1.csv")
 
 #covert mg to g
@@ -26,10 +27,10 @@ ggplot(MyDF, aes(
   scale_y_log10("Predator mass in grams") +
   theme_bw() +
   theme(
-    legend.position = "bottom",                         # 🔹 Legend alta
+    legend.position = "bottom",                         
     legend.title = element_text(size = 10),
     legend.text = element_text(size = 9),
-    strip.text.y = element_text(angle = 90, size = 8),   # 🔹 Facet yazılarını küçült
+    strip.text.y = element_text(angle = 90, size = 8),   
     axis.title = element_text(size = 11, face = "bold"),
     axis.text = element_text(size = 9)
   )

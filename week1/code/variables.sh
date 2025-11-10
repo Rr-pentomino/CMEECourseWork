@@ -25,7 +25,14 @@ echo 'the current value of the variable is.' $MY_VAR
 echo 'Enter two numbers separated by space'
 read a b 
 echo
-echo 'you entered' $a 'and' $b '; Their sum is:'
+
+# validate input
+if [ -z "$a" ] || [ -z "$b" ]; then
+  echo "Error: Two numbers are required."
+  exit 1
+fi
+
 
 MY_SUM=$(expr $a + $b)
+echo 'The sum of' $a 'and' $b 'is:'
 echo $MY_SUM
