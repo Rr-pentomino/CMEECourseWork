@@ -23,6 +23,10 @@ This repository contains the scripts and resources for the third week of the Bio
   - `break.R`: Script demonstrating the use of the `break` statement in a loop.
   - `basic_io.R`: Handles basic input/output operations like reading and writing CSV files.
   - `Florida.R`: Performs a permutation test to evaluate the correlation between year and temperature data.
+    - `apply1.R`: Demonstrates the use of the `apply()` function to compute row means, row variances, and column means of a numeric matrix.
+  - `apply2.R`: Defines a custom function (`SomeOperation`) and applies it across matrix rows using `apply()`.
+  - `R_conditionals.R`: Contains examples of conditional logic in R. 
+  - `sample.R`: Compares different sampling and iteration techniques (loops vs. lapply/sapply). 
   - `boilerplate.R`: A boilerplate R script template with a function example.
   - `TreeHeight.R`: Computes tree heights based on angle and distance data and saves the result.
   - `next.R`: Demonstrates the use of the `next` statement in a loop.
