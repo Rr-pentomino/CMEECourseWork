@@ -1,7 +1,8 @@
 *~ 
 *.tmp
 
-git add -f temporary.tmp
-
-
+.DS_Store
 .Rproj.user
+.gitmodules
+.Rproj.user
+
