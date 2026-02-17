@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Bootcamp_Assessment_AhmetEsmer_ase225</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Bootcamp_Assessment_AhmetEsmer_ase225</h1>
+</header>
+<h1 id="bootcamp-assessment-ahmet-esmer">Bootcamp Assessment: Ahmet
+Esmer</h1>
+<h2 id="execution-results">Execution results</h2>
+<ul>
+<li>Scripts detected and tested: 45 (across weeks 1–4 code
+directories)</li>
+<li>Successful runs (exit code 0): 35</li>
+<li>Non-zero exit runs: 10
+<ul>
+<li>Several failures are due to <strong>headless / non-RStudio
+execution</strong> (e.g., <code>Error: RStudio not running</code>) or
+<strong>interactive input</strong> (e.g., shell script prompting), so
+these are treated as <strong>present but not validated</strong>, not
+missing.</li>
+</ul></li>
+</ul>
+<h3 id="missing-expected-scripts-from-log">Missing expected scripts
+(from LOG)</h3>
+<p>Missing 27 expected scripts: Missing taught (26): .py (13): -
+blackbirds.py - myscript.py - profileme.py - profileme2.py - re4.py -
+regexs.py - run_fmr_r.py - scope.py - sysargv.py - timeitme.py -
+using_os.py - Vectorize1.py - vectorize2.py .r (12): - browse.R -
+control.R - control_flow.R - DataWrang.R - fmr.R - plotLin.R -
+preallocate.R - ricker.R - SQLinR.R - try.R - Vectorize1.R -
+vectorize2.R .sh (1): - tiff2_png.sh</p>
+<p>Missing assigned (1): .sh (1): - run_get_TreeHeight.sh</p>
+<h2 id="script-specific-feedback">Script-Specific Feedback</h2>
+<blockquote>
+<p>Representative scripts chosen to cover: strong examples, assigned
+scripts, execution issues, and common style/robustness problems.</p>
+</blockquote>
+<h3 id="align_seqs_better.py">align_seqs_better.py</h3>
+<p>Status: Success</p>
+<p>Evidence (from LOG): - Exit code: 0 - Tool warnings: None shown -
+Output validation: Not validated by tool (no expected outputs
+matched)</p>
+<p>Rubric relevance: - Criterion 2 - Criterion 3 - Criterion 8 -
+Criterion 9</p>
+<p>Ran cleanly in the headless test environment.</p>
+<p>Improvement suggestion: Keep this pattern; consider adding minimal
+argument parsing / file existence checks where relevant. ###
+oaks_debugme.py</p>
+<p>Status: Success</p>
+<p>Evidence (from LOG): - Exit code: 0 - Tool warnings: None shown -
+Output validation: Not validated by tool (no expected outputs
+matched)</p>
+<p>Rubric relevance: - Criterion 2 - Criterion 3 - Criterion 8 -
+Criterion 9</p>
+<p>Ran cleanly in the headless test environment.</p>
+<p>Improvement suggestion: Keep this pattern; consider adding minimal
+argument parsing / file existence checks where relevant. ###
+variables.sh</p>
+<p>Status: Present but not validated (non-zero exit)</p>
+<p>Evidence (from LOG): - Exit code: 1 - Tool warnings: None shown -
+Output validation: Not validated by tool (no expected outputs
+matched)</p>
+<p>Rubric relevance: - Criterion 2 - Criterion 3 - Criterion 8 -
+Criterion 9</p>
+<p>Execution failed in the headless environment; treat as present but
+not validated unless the logic itself is missing.</p>
+<p>Improvement suggestion: Remove RStudio dependencies (e.g.,
+<code>rstudioapi</code> setwd patterns) and avoid interactive prompts;
+make paths relative and runnable via
+<code>Rscript</code>/<code>bash</code> non-interactively. ###
+Florida.R</p>
+<p>Status: Present but not validated (non-zero exit)</p>
+<p>Evidence (from LOG): - Exit code: 1 - Tool warnings: See errors below
+- Output validation: Not validated by tool (no expected outputs
+matched)</p>
+<p>Rubric relevance: - Criterion 2 - Criterion 3 - Criterion 8 -
+Criterion 9</p>
+<p>Execution failed in the headless environment; treat as present but
+not validated unless the logic itself is missing.</p>
+<p>Improvement suggestion: Remove RStudio dependencies (e.g.,
+<code>rstudioapi</code> setwd patterns) and avoid interactive prompts;
+make paths relative and runnable via
+<code>Rscript</code>/<code>bash</code> non-interactively. ###
+PP_Dists.R</p>
+<p>Status: Present but not validated (non-zero exit)</p>
+<p>Evidence (from LOG): - Exit code: 1 - Tool warnings: See errors below
+- Output validation: Not validated by tool (no expected outputs
+matched)</p>
+<p>Rubric relevance: - Criterion 2 - Criterion 3 - Criterion 8 -
+Criterion 9</p>
+<p>Execution failed in the headless environment; treat as present but
+not validated unless the logic itself is missing.</p>
+<p>Improvement suggestion: Remove RStudio dependencies (e.g.,
+<code>rstudioapi</code> setwd patterns) and avoid interactive prompts;
+make paths relative and runnable via
+<code>Rscript</code>/<code>bash</code> non-interactively. ###
+PP_Regress.R</p>
+<p>Status: Present but not validated (non-zero exit)</p>
+<p>Evidence (from LOG): - Exit code: 1 - Tool warnings: See errors below
+- Output validation: Not validated by tool (no expected outputs
+matched)</p>
+<p>Rubric relevance: - Criterion 2 - Criterion 3 - Criterion 8 -
+Criterion 9</p>
+<p>Execution failed in the headless environment; treat as present but
+not validated unless the logic itself is missing.</p>
+<p>Improvement suggestion: Remove RStudio dependencies (e.g.,
+<code>rstudioapi</code> setwd patterns) and avoid interactive prompts;
+make paths relative and runnable via
+<code>Rscript</code>/<code>bash</code> non-interactively.</p>
+<h3 id="tautocorr.r">TAutoCorr.R</h3>
+<p>Specification alignment: - Relative path data load:
+<strong>Yes</strong>
+(<code>../data/KeyWestAnnualMeanTemperature.RData</code>) -
+Successive-year pairing: <strong>Yes</strong>
+(<code>temp[1:(n-1)]</code> vs <code>temp[2:n]</code>) - Observed
+correlation stored/reported: <strong>Yes</strong>
+(<code>real_corr</code>) - Permutation test (shuffle order, recompute
+lag-1 correlation, store null): <strong>Yes</strong>
+(<code>perm_corrs</code>) - Permutation p-value: <strong>Partially
+matches</strong> - Script uses a <strong>two-sided</strong> permutation
+p-value via <code>abs(...)</code>. - Metadata rule specifies fraction of
+random coefficients ≥ observed coefficient (typically
+<strong>one-sided</strong> for “positive persistence”), so clarify
+sidedness and match the spec. - Non-interactive execution:
+<strong>Yes</strong></p>
+<p>Algorithmic evaluation: - Correct indexing for lag-1 pairing and
+permutation resampling. - Clear outputs written to
+<code>../results/</code> with a text summary and a saved figure.</p>
+<p>Conceptual understanding: - Shows good understanding of <strong>lag-1
+autocorrelation</strong> and the need for a <strong>permutation
+null</strong> that breaks temporal structure.</p>
+<p>Statistical correctness: - Correlation computed appropriately for
+adjacent-year pairs. - Permutation test is correctly structured; only
+p-value definition needs alignment/justification.</p>
+<p>Rubric relevance: - Criterion 2 - Criterion 3 - Criterion 8 -
+Criterion 9 - Criterion 10 - Criterion 11</p>
+<p>Strong, well-structured implementation with clear reporting outputs.
+Main improvement is ensuring the permutation p-value matches the
+specification (or explicitly justifying a two-sided test).</p>
+<p>Improvement suggestion: - Avoid <code>install.packages()</code>
+inside the script (prefer a README note + <code>renv</code> /
+instructions); automated environments often forbid installs. - Match the
+spec’s p-value definition (one-sided vs two-sided) and state it in the
+output. - Add basic guards: check <code>data_path</code> exists; handle
+<code>n &lt; 3</code>; handle missing values with <code>na.omit()</code>
+or <code>use="complete.obs"</code>.</p>
+<h2 id="detailed-evaluation-tautocorr.r">Detailed Evaluation:
+TAutoCorr.R</h2>
+<h3 id="a.-specification-alignment">A. Specification Alignment</h3>
+<p><strong>Matches</strong> - Relative paths used for data input. -
+Lag-1 correlation computed on (n-1) successive pairs. - Permutation test
+randomises the temperature series and recomputes the same lag-1
+statistic repeatedly. - Reports observed correlation and a permutation
+p-value; produces a plot and a text summary.</p>
+<p><strong>Partially matches / Diverges</strong> - P-value definition:
+implemented as <strong>two-sided</strong> (|r|) rather than “fraction ≥
+observed coefficient”. - Package management: installs packages at
+runtime (can break reproducibility in controlled environments).</p>
+<p><strong>Structurally complete</strong>: Yes.</p>
+<h3 id="b.-conceptual-understanding-of-autocorrelation">B. Conceptual
+Understanding of Autocorrelation</h3>
+<ul>
+<li>Correctly frames the question as <strong>adjacent-year
+dependence</strong> (lag 1).</li>
+<li>Correctly separates observed statistic from a <strong>null
+distribution</strong> created by permutation.</li>
+<li>Interpretation is present (writes a short conclusion block to
+file).</li>
+</ul>
+<h3 id="c.-algorithmic-implementation-depth-vs-example-solution">C.
+Algorithmic Implementation Depth (vs example solution)</h3>
+<ul>
+<li>Indexing for lag-1 pairs is correct and clear.</li>
+<li>Permutation loop is standard and readable.</li>
+<li>Adds strong enhancements vs the example:
+<ul>
+<li>Creates/uses a <code>results/</code> directory.</li>
+<li>Saves a figure and a results text file.</li>
+<li>Uses a reproducible seed.</li>
+</ul></li>
+</ul>
+<h3 id="d.-statistical-computational-rigor">D. Statistical &amp;
+Computational Rigor</h3>
+<ul>
+<li>Uses <code>cor()</code> directly (fine), whereas the example uses
+<code>cor.test(...)</code> to extract an estimate.</li>
+<li>Permutation logic is correct; sidedness of p-value should be made
+explicit and aligned to the spec.</li>
+</ul>
+<h3 id="e.-error-handling-robustness">E. Error Handling &amp;
+Robustness</h3>
+<ul>
+<li>Currently limited: no explicit checks for missing data file, short
+series, or NA handling.</li>
+<li>No interactive input required (good).</li>
+</ul>
+<h3 id="f.-comparison-with-example-solution">F. Comparison with Example
+Solution</h3>
+<p><strong>Similarities</strong> - Lag-1 pairing and correlation
+calculation. - Permutation-based null distribution.</p>
+<p><strong>Key omissions (relative to a “teaching” solution)</strong> -
+Does not modularise into a function (not required, but would improve
+reuse/testability). - Does not explicitly discuss why a permutation
+p-value is used instead of <code>cor.test()</code>’s p-value.</p>
+<p><strong>Conceptual gaps</strong> - Clarify whether the test is
+one-sided (positive persistence) or two-sided, and reflect that in the
+p-value computation.</p>
+<p><strong>Improvements beyond example</strong> - Higher-quality outputs
+(saved figure + clean text report). - Directory management and
+reproducibility (<code>set.seed</code>).</p>
+<h2 id="overall-feedback">Overall feedback</h2>
+<ul>
+<li><strong>Strengths</strong>
+<ul>
+<li>Clear organisation into week folders with per-week READMEs
+present.</li>
+<li>Good individual Git activity (regular commits; mostly descriptive
+messages).</li>
+<li><code>TAutoCorr.R</code> is a strong, coherent analysis script with
+reproducible permutation testing and clear saved outputs.</li>
+</ul></li>
+<li><strong>High-impact improvements</strong>
+<ul>
+<li><strong>Remove IDE dependencies</strong>: avoid
+<code>rstudioapi::getActiveDocumentContext()</code>; use relative paths
+from the script’s working directory or <code>here::here()</code>
+patterns.</li>
+<li><strong>Non-interactive execution</strong>: avoid prompts in shell
+scripts; accept arguments or provide defaults.</li>
+<li><strong>Reproducibility</strong>: don’t install packages inside
+scripts; document dependencies in README and/or use
+<code>renv</code>.</li>
+<li><strong>Completeness</strong>: many expected taught scripts are
+missing; ensure required/expected filenames are present in the scanned
+<code>code/</code> directories.</li>
+</ul></li>
+</ul>
+<h2 id="groupwork-evaluation-criterion-6">Groupwork Evaluation
+(Criterion 6)</h2>
+<ul>
+<li>Group commits: 69; branches: 15; merge commits: 21</li>
+<li>No feature branches detected (all work on main branch);
+Collaboration is clearly active and multi-person, but structured feature
+branching / PR workflow is not clearly evidenced by the tool’s branch
+classification.</li>
+</ul>
+<h2 id="individual-group-contribution-criterion-7">Individual Group
+Contribution (Criterion 7)</h2>
+<ul>
+<li>Commits by student: 9; ~13% of total</li>
+<li>Contributions tracked across Oct–Dec (not only last-minute)</li>
+<li><code>CONTRIBUTIONS.md</code> present and non-empty - Moderate,
+meaningful contribution, though uneven and hard to gauge substance from
+summary alone.</li>
+</ul>
+<h2 id="priority-fixes">Priority fixes</h2>
+<ol type="1">
+<li>Make R scripts runnable under <code>Rscript</code> (remove
+<code>rstudioapi</code> dependency; avoid <code>setwd()</code> to IDE
+paths).</li>
+<li>Remove interactive prompts from shell scripts (or provide
+non-interactive defaults + CLI args).</li>
+<li>Ensure required/expected scripts are included under correct
+filenames in scanned <code>code/</code> directories.</li>
+<li>Avoid package installation inside scripts</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Overall, very good work. There were a number of missing expected
+taught scripts. Many execution failures weee environmental (RStudio /
+interactive); indicate a key next learning step: writing scripts that
+run cleanly in a non-interactive, headless environment.</p>
+<h2 id="marks">Marks</h2>
+<!-- Total Mark: 68/100   -->
+<p>Classification: Merit</p>
+</body>
+</html>
